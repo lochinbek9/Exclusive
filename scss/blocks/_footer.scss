@@ -1,0 +1,68 @@
+.footer {
+    background: #000;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__section {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        &__text {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: #DB4444;
+                transform: translateX(5px);
+            }
+        }
+
+        &__input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: #DB4444;
+                outline: none;
+            }
+        }
+
+        &__app__link {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &__social__icons {
+            &__link {
+                margin-right: 10px;
+                font-size: 20px;
+                color: #ccc;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                    color: #DB4444;
+                }
+            }
+        }
+    }
+}

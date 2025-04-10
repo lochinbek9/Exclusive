@@ -7,7 +7,7 @@
     <meta name="description" content="This is a simple web page template.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Frontend">
     <meta name="author" content="Abdulhayev Nuriddin">
-    <title>Online Store - Exclusive</title>
+    <title>Wishlist - Exclusive</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,45 +40,30 @@
         </div>
     </header>
 
-    <div class="container">
-        <section class="section">
-            <div class="section__header">
-                <h2 class="section__header__title">Today's Deals</h2>
-                <div class="section__header__clock" id="clock">
-                    <span id="hours">23</span> : <span id="minutes">59</span> : <span id="seconds">59</span>
-                </div>
-                <div class="section__header__controls">
-                    <button onclick="prevSlide('productList')" aria-label="Previous Product"
-                        class="section__header__controls__button"><span
-                            class="material-icons">chevron_left</span></button>
-                    <button onclick="nextSlide('productList')" aria-label="Next Product"
-                        class="section__header__controls__button"><span
-                            class="material-icons">chevron_right</span></button>
-                </div>
-            </div>
-            <div class="section__slider__wrapper">
-                <div class="section__slider">
-                    <div class="section__product__list" id="productList"></div>
-                </div>
-            </div>
-        </section>
+    <section class="wishlist__section section">
+        <div class="section__header">
+            <h2 class="section__header__title">Wishlist</h2>
+        </div>
+        <div class="wishlist__section__items" id="wishlistItems"></div>
+        <button class="wishlist__section__move__to__cart" onclick="moveAllToCart()">Move All to Cart</button>
+    </section>
 
-        <section class="section this__month__section">
-            <div class="section__header">
-                <h2 class="section__header__title">This Month's Best</h2>
-                <a href="#" class="section__header__view__all">View All</a>
+    <section class="just__for__you__section section">
+        <div class="section__header">
+            <h2 class="section__header__title">Just For You</h2>
+            <div class="section__header__controls">
+                <button onclick="prevSlide('justForYouItems')" aria-label="Previous"
+                    class="section__header__controls__button"><span class="material-icons">chevron_left</span></button>
+                <button onclick="nextSlide('justForYouItems')" aria-label="Next"
+                    class="section__header__controls__button"><span class="material-icons">chevron_right</span></button>
             </div>
-            <div class="this__month__items" id="thisMonthItems"></div>
-        </section>
-
-        <section class="section our__products__section">
-            <div class="section__header">
-                <h2 class="section__header__title">Our Products</h2>
-                <a href="#" class="section__header__view__all">View All Products</a>
+        </div>
+        <div class="section__slider__wrapper">
+            <div class="section__slider">
+                <div class="just__for__you__section__items" id="justForYouItems"></div>
             </div>
-            <div class="our__products__items" id="ourProductsItems"></div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__section">
@@ -130,7 +115,6 @@
     </footer>
 
     <script src="./js/all.js"></script>
-
 </body>
 
 </html>
