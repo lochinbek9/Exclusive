@@ -1,0 +1,95 @@
+.header {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__nav {
+        &__link {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: #DB4444;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    &__right__section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &__input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: #DB4444;
+                outline: none;
+            }
+        }
+
+        &__icon__wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .material-symbols-outlined {
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: #DB4444;
+                transform: scale(1.1);
+            }
+        }
+
+        &__count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #DB4444;
+            color: white;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

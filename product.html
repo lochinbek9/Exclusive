@@ -7,7 +7,7 @@
     <meta name="description" content="This is a simple web page template.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Frontend">
     <meta name="author" content="Abdulhayev Nuriddin">
-    <title>Online Store - Exclusive</title>
+    <title>Product Details - Exclusive</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,45 +40,88 @@
         </div>
     </header>
 
-    <div class="container">
-        <section class="section">
-            <div class="section__header">
-                <h2 class="section__header__title">Today's Deals</h2>
-                <div class="section__header__clock" id="clock">
-                    <span id="hours">23</span> : <span id="minutes">59</span> : <span id="seconds">59</span>
-                </div>
-                <div class="section__header__controls">
-                    <button onclick="prevSlide('productList')" aria-label="Previous Product"
-                        class="section__header__controls__button"><span
-                            class="material-icons">chevron_left</span></button>
-                    <button onclick="nextSlide('productList')" aria-label="Next Product"
-                        class="section__header__controls__button"><span
-                            class="material-icons">chevron_right</span></button>
+    <section class="product__details">
+        <div class="product__details__breadcrumb">
+            <p><a href="index.html" class="product__details__breadcrumb__link">Home</a> / <strong
+                    id="productName">Product</strong></p>
+        </div>
+        <div class="product__details__info">
+            <div class="product__details__gallery">
+                <div class="product__details__gallery__thumbnails" id="thumbnails"></div>
+                <div class="product__details__gallery__main__image">
+                    <img id="mainImage" src="" alt="Product Image">
                 </div>
             </div>
-            <div class="section__slider__wrapper">
-                <div class="section__slider">
-                    <div class="section__product__list" id="productList"></div>
+            <div class="product__details__details">
+                <h1 id="productTitle" class="product__details__details__title"></h1>
+                <div class="product__details__details__rating">
+                    <span class="product__details__details__rating__stars">★★★★★</span>
+                    <span class="product__details__details__rating__stock">In Stock</span>
+                </div>
+                <p class="product__details__details__price" id="productPrice"></p>
+                <p class="product__details__details__description">Short description about this product: made with
+                    high-quality materials, modern design, and easy to use.</p>
+                <div class="product__details__details__options">
+                    <p class="product__details__details__options__text">Select Color:</p>
+                    <div class="product__details__details__options__colors">
+                        <span class="product__details__details__options__colors__circle" style="background: #FF0000;"
+                            data-color="Red" onclick="selectColor(this)"></span>
+                        <span class="product__details__details__options__colors__circle" style="background: #00FF00;"
+                            data-color="Green" onclick="selectColor(this)"></span>
+                        <span class="product__details__details__options__colors__circle" style="background: #0000FF;"
+                            data-color="Blue" onclick="selectColor(this)"></span>
+                    </div>
+                    <p class="product__details__details__options__text">Select Size:</p>
+                    <div class="product__details__details__options__sizes">
+                        <button onclick="selectSize(this)"
+                            class="product__details__details__options__sizes__button">S</button>
+                        <button onclick="selectSize(this)"
+                            class="product__details__details__options__sizes__button">M</button>
+                        <button onclick="selectSize(this)"
+                            class="product__details__details__options__sizes__button">L</button>
+                        <button onclick="selectSize(this)"
+                            class="product__details__details__options__sizes__button">XL</button>
+                    </div>
+                </div>
+                <div class="product__details__details__buy__section">
+                    <div class="product__details__details__buy__section__quantity">
+                        <button onclick="decreaseQuantity()"
+                            class="product__details__details__buy__section__quantity__button">-</button>
+                        <span id="quantity" class="product__details__details__buy__section__quantity__value">1</span>
+                        <button onclick="increaseQuantity()"
+                            class="product__details__details__buy__section__quantity__button">+</button>
+                    </div>
+                    <button class="product__details__details__buy__section__add__to__cart__btn"
+                        onclick="addToCartFromProduct()">Add to Cart</button>
+                    <button class="product__details__details__buy__section__buy__btn" onclick="buyNow()">Buy
+                        Now</button>
+                    <button id="wishlistBtn" class="product__details__details__buy__section__wishlist__btn"
+                        onclick="toggleWishlist(this)"><span class="material-icons">favorite_border</span></button>
+                </div>
+                <div class="product__details__details__delivery__info">
+                    <p><span class="material-icons">local_shipping</span> Free Delivery: Enter your postal code</p>
+                    <p><span class="material-icons">undo</span> Return: Free returns within 30 days</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section this__month__section">
-            <div class="section__header">
-                <h2 class="section__header__title">This Month's Best</h2>
-                <a href="#" class="section__header__view__all">View All</a>
+    <section class="related__section section">
+        <div class="section__header">
+            <h2 class="section__header__title">Related Products</h2>
+            <div class="section__header__controls">
+                <button onclick="prevSlide('relatedItems')" aria-label="Previous"
+                    class="section__header__controls__button"><span class="material-icons">chevron_left</span></button>
+                <button onclick="nextSlide('relatedItems')" aria-label="Next"
+                    class="section__header__controls__button"><span class="material-icons">chevron_right</span></button>
             </div>
-            <div class="this__month__items" id="thisMonthItems"></div>
-        </section>
-
-        <section class="section our__products__section">
-            <div class="section__header">
-                <h2 class="section__header__title">Our Products</h2>
-                <a href="#" class="section__header__view__all">View All Products</a>
+        </div>
+        <div class="section__slider__wrapper">
+            <div class="section__slider">
+                <div class="related__section__items" id="relatedItems"></div>
             </div>
-            <div class="our__products__items" id="ourProductsItems"></div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__section">
