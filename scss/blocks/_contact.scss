@@ -1,0 +1,113 @@
+.contact__statr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__list {
+    width: 340px;
+    height: 457px;
+    left: 135px;
+    top: 323px;
+    background: #fff;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    padding: 0px 34px
+}
+
+.contact__input {
+    padding: 40px 31px;
+    width: 800px;
+    height: 457px;
+    background: #fff;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, .05);
+    border-radius: 4px
+}
+
+.contact__send {
+    margin-left: 500px;
+    margin-top: 30px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 14px;
+    color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    padding-left: 45px;
+    padding-top: 15px;
+    gap: 10px;
+    width: 215px;
+    height: 56px;
+    background: #db4444;
+    border-radius: 4px
+}
+
+.contact__neme {
+    gap: 16px;
+    width: 235px;
+    height: 50px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding-left: 25px
+}
+
+.contact__messenger {
+    margin-top: 32px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    width: 717px;
+    height: 200px;
+    background: #f5f5f5;
+    border-radius: 4px
+}
+
+.contact__item {
+    padding-top: 64px
+}
+
+.contact__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000
+}
+
+.contact__titiles {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.contact__link {
+    padding: 10px 0px 0px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000
+}
+
+.contact__text {
+    padding: 20px 5px 0px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000
+}
+
+@media only screen and (max-width: 568px) {
+    .contact__statr {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .contact__input {
+        flex-direction: column;
+        align-items: center
+    }
+}
