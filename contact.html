@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a simple web page template.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Frontend">
+    <meta name="author" content="Abdulhayev Nuriddin">
+    <title>Contact - Exclusive</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <span onclick="window.location.href='index.html'" class="header__logo">EXCLUSIVE</span>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav__link">Home</a>
+            <a href="contact.html" class="header__nav__link">Contact</a>
+            <a href="about.html" class="header__nav__link">About</a>
+            <a href="signup.html" class="header__nav__link">Sign Up</a>
+        </nav>
+        <div class="header__right__section">
+            <label for="searchInput" class="visually__hidden">Search</label>
+            <input id="searchInput" type="text" placeholder="What are you looking for?" onkeyup="searchProducts(event)"
+                class="header__right__section__input">
+            <div class="header__right__section__icon__wrapper">
+                <span class="material-symbols-outlined" onclick="window.location.href='wishlist.html'">favorite</span>
+                <span class="header__right__section__count" id="wishlistCount">0</span>
+            </div>
+            <div class="header__right__section__icon__wrapper">
+                <span class="material-symbols-outlined" onclick="window.location.href='cart.html'">shopping_cart</span>
+                <span class="header__right__section__count" id="cartCount">0</span>
+            </div>
+            <span class="material-symbols-outlined" onclick="window.location.href='signup.html'">person</span>
+        </div>
+    </header>
+    <main>
+        <section class="contact__container container">
+            <div class="contact__statr">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <div class="contact__titiles">
+                            <img src="./contactimg/phonecall.png" alt="" class="contact__img">
+                            <h2 class="contact__title">Call To Us</h2>
+                        </div>
+                        <p class="contact__text">We are available 24/7, 7 days a week.</p>
+                        <a href="./index.html" class="contact__link">Phone: +8801611112222</a>
+                    </li>
+
+                    <li class="contact__item">
+                        <div class="contact__titiles">
+                            <img src="./contactimg/email.png" alt="" class="contact__img">
+                            <h2 class="contact__title">Write To US</h2>
+                        </div>
+                        <p class="contact__text">Fill out our form and we will contact <br>you within 24 hours.</p>
+                        <a href="./index.html" class="contact__link">Emails: customer@exclusive.com</a>
+                        <a href="./index.html" class="contact__link">Emails: customer@exclusive.com</a>
+                    </li>
+                </ul>
+                <div class="contact__input">
+                    <div class="contact__statr2">
+                        <input type="text" class="contact__neme" placeholder="Your Name">
+                        <input type="password" class="contact__neme" name="user password" placeholder="Your password">
+                        <input type="number" class="contact__neme" name="user number" placeholder="Your phone">
+                    </div>
+                    <div>
+                        <input type="text" name="text" placeholder="Your messenger" class="contact__messenger">
+                    </div>
+                    <button type="submit" class="contact__send">send messenger</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__section">
+            <span onclick="window.location.href='index.html'" class="header__logo">EXCLUSIVE</span>
+            <p class="footer__section__text">Subscribe</p>
+            <p class="footer__section__text">Get 10% off your first order</p>
+            <input type="email" placeholder="Enter your email" class="footer__section__input">
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section__title">Support</h3>
+            <span class="footer__section__text">111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.</span>
+            <br>
+            <a href="mailto:exclusive@gmail" class="footer__section__link">exclusive@gmail.com</a>
+            <br>
+            <a href="tel:+88015888889999" class="footer__section__link">+88015-88888-9999</a>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section__title">Account</h3>
+            <a href="./signup.html" class="footer__section__link">My Account</a><br>
+            <a href="./signup.html" class="footer__section__link">Login / Register</a><br>
+            <a href="cart.html" class="footer__section__link">Cart</a><br>
+            <a href="wishlist.html" class="footer__section__link">Wishlist</a><br>
+            <a href="./index.html" class="footer__section__link">Shop</a>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section__title">Quick Links</h3>
+            <a href="#" class="footer__section__link">Privacy Policy</a><br>
+            <a href="#" class="footer__section__link">Terms of Use</a><br>
+            <a href="#" class="footer__section__link">FAQ</a><br>
+            <a href="./contact.html" class="footer__section__link">Contact</a>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section__title">Download App</h3>
+            <p class="footer__section__text">Save $3 for new users</p>
+            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer"
+                class="footer__section__app__link"><img src="./images/playmarket.svg" alt="Google Play"></a>
+            <a href="https://www.apple.com/app-store" target="_blank" rel="noopener noreferrer"
+                class="footer__section__app__link"><img src="./images/appstore.svg" alt="App Store"></a>
+            <div class="footer__section__social__icons">
+                <a href="https://www.facebook.com" class="footer__section__social__icons__link"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com" class="footer__section__social__icons__link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="footer__section__social__icons__link"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" class="footer__section__social__icons__link"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
