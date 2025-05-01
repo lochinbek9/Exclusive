@@ -307,6 +307,7 @@ body {
 .hero__statr {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 56px
 }
 
@@ -408,7 +409,7 @@ body {
     margin-top: 60px;
     display: flex;
     align-items: center;
-    gap: 30px
+    justify-content: space-between;
 }
 
 .categori__item {
@@ -529,7 +530,8 @@ body {
 .arrive__statr {
     display: flex;
     margin-top: 60px;
-    gap: 30px
+    justify-content: space-between;
+    align-items: center;
 }
 
 .arrive__item {
@@ -627,8 +629,7 @@ body {
 .fast__list {
     display: flex;
     align-items: center;
-    gap: 88px;
-    margin: 140px 114px;
+    justify-content: space-between;
     padding-top: 20px
 }
 
