@@ -7,7 +7,7 @@
     <meta name="description" content="This is a simple web page template.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Frontend">
     <meta name="author" content="Abdulhayev Nuriddin">
-    <title>Wishlist - Exclusive</title>
+    <title>About - Exclusive</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,32 +39,86 @@
             <span class="material-symbols-outlined" onclick="window.location.href='signup.html'">person</span>
         </div>
     </header>
-
-    <section class="wishlist__section section">
-        <div class="section__header">
-            <h2 class="section__header__title">Wishlist</h2>
-        </div>
-        <div class="wishlist__section__items" id="wishlistItems"></div>
-        <button class="wishlist__section__move__to__cart" onclick="moveAllToCart()">Move All to Cart</button>
-    </section>
-
-    <section class="just__for__you__section section">
-        <div class="section__header">
-            <h2 class="section__header__title">Just For You</h2>
-            <div class="section__header__controls">
-                <button onclick="prevSlide('justForYouItems')" aria-label="Previous"
-                    class="section__header__controls__button"><span class="material-icons">chevron_left</span></button>
-                <button onclick="nextSlide('justForYouItems')" aria-label="Next"
-                    class="section__header__controls__button"><span class="material-icons">chevron_right</span></button>
+    <main>
+        <section class="about__container container">
+            <div class="about__statr">
+                <div class="about__teks">
+                    <h1 class="about__title">Our Story</h1>
+                    <p class="about__text">Launced in 2015,
+                        Exclusive is South Asia’s premier online shopping <br>makterplace with an active presense in
+                        Bangladesh. Supported <br>by wide range of tailored marketing,
+                        data and service solutions,
+                        <br>Exclusive has 10,
+                        500 sallers and 300 brands and serves 3 <br>millioons customers across the region.
+                    </p>
+                    <p class="about__text2">Exclusive has more than 1 Million products to offer,
+                        growing at a <br>very fast. Exclusive offers a diverse assotment in categories <br>ranging
+                        from consumer. </p>
+                </div><img src="./aboutimg/shoping.png" alt="" class="about__img">
             </div>
-        </div>
-        <div class="section__slider__wrapper">
-            <div class="section__slider">
-                <div class="just__for__you__section__items" id="justForYouItems"></div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+        <section class="reytig__container container">
+            <ul class="reyting__list">
+                <li class="reyting__item"><img src="./aboutimg/servis3.png" alt="" class="reyting__img"><b
+                        class="reyting__number">10.5k</b>
+                    <p class="reyting__text">Sallers active our site</p>
+                </li>
+                <li class="reyting__itemin"><img src="./aboutimg/servis4.png" alt="" class="reyting__img"><b
+                        class="reyting__numberin">33k</b>
+                    <p class="reyting__textin">Mopnthly Produduct Sale</p>
+                </li>
+                <li class="reyting__item"><img src="./aboutimg/servis5.png" alt="" class="reyting__img"><b
+                        class="reyting__number">45.5k</b>
+                    <p class="reyting__text">Customer active in our site</p>
+                </li>
+                <li class="reyting__item"><img src="./aboutimg/sevis6.png" alt="" class="reyting__img"><b
+                        class="reyting__number">25k</b>
+                    <p class="reyting__text">Anual gross sale in our site</p>
+                </li>
+            </ul>
+        </section>
+        <section class="populer__container container">
+            <ul class="populer__list">
+                <li class="populer__item"><img src="./aboutimg/crus.png" alt="" class="populer__img">
+                    <h2 class="populer__title">Tom Cruise</h2>
+                    <p class="populer__text">Founder & Chairman</p>
+                    <div class="populer__links"><a href="./index.html"><img src="./aboutimg/Group (4).png" alt=""></a><a
+                            href="./index.html"><img src="./aboutimg/Group (5).png" alt=""></a><a
+                            href="./index.html"><img src="./aboutimg/Vector (3).png" alt=""></a></div>
+                </li>
+                <li class="populer__item"><img src="./aboutimg/watson.png" alt="" class="populer__img">
+                    <h2 class="populer__title">Emma Watson</h2>
+                    <p class="populer__text">Managing Director</p>
+                    <div class="populer__links"><a href="./index.html"><img src="./aboutimg/Group (4).png" alt=""></a><a
+                            href="./index.html"><img src="./aboutimg/Group (5).png" alt=""></a><a
+                            href="./index.html"><img src="img/Vector (3).png" alt=""></a></div>
+                </li>
+                <li class="populer__item"><img src="./aboutimg/shimit.png" alt="" class="populer__img">
+                    <h2 class="populer__title">Will Smith</h2>
+                    <p class="populer__text">Product Designer</p>
+                    <div class="populer__links"><a href="./index.html"><img src="./aboutimg/Group (4).png" alt=""></a><a
+                            href="./index.html"><img src="./aboutimg/Group (5).png" alt=""></a><a
+                            href="./index.html"><img src="img/Vector (3).png" alt=""></a></div>
+                </li>
+            </ul>
+        </section>
+        <section class="fast__container container">
+            <ul class="fast__list">
+                <li class="fast__item"><img src="./aboutimg/car.png" alt="" class="fast__img">
+                    <h4 class="fast__title">FREE AND FAST DELIVERY</h4>
+                    <p class="fast__text">Free delivery for all orders over $140</p>
+                </li>
+                <li class="fast__item"><img src="./aboutimg/hidefon.png" alt="" class="fast__img">
+                    <h4 class="fast__title">24/7 CUSTOMER SERVICE</h4>
+                    <p class="fast__text">Friendly 24/7 customer support</p>
+                </li>
+                <li class="fast__item"><img src="./aboutimg/galochka.png" alt="" class="fast__img">
+                    <h4 class="fast__title">MONEY BACK GUARANTEE</h4>
+                    <p class="fast__text">We reurn money within 30 days</p>
+                </li>
+            </ul>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer__section">
             <span onclick="window.location.href='index.html'" class="header__logo">EXCLUSIVE</span>
@@ -115,7 +169,6 @@
     </footer>
 
     <script src="./js/all.js"></script>
-
 </body>
 
 </html>
