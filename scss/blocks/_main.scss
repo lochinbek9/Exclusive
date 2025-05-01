@@ -301,3 +301,357 @@ body {
         transform: scale(0.95);
     }
 }
+
+// -----------------------------------------------------------------------------
+
+.hero__statr {
+    display: flex;
+    align-items: center;
+    margin-top: 56px
+}
+
+.hero__link {
+    padding-top: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000
+}
+
+.hero__fon {
+    width: 892px;
+    height: 344px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+    padding: 58px 64px
+}
+
+.hero__logois {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.hero__span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fafafa
+}
+
+.hero__title {
+    padding: 20px 0px 21px;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fafafa
+}
+
+.hero__clink {
+    width: 151px;
+    height: 24px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fafafa
+}
+
+@media only screen and (max-width: 586px) {
+    .hero__list {
+        align-items: center;
+        text-align: center
+    }
+
+    .hero__statr {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .hero__fon {
+        flex-direction: column;
+        text-align: center;
+        width: 400px;
+        height: 600px;
+        padding-top: 50px
+    }
+
+    .hero__art1 {
+        width: 600px;
+        height: 600px
+    }
+}
+
+.categori__container {
+    margin-top: 80px
+}
+
+.categori__title {
+    padding-top: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000
+}
+
+.categori__list {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.categori__item {
+    width: 170px;
+    height: 145px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    padding: 25px 46px
+}
+
+.categori__itemin {
+    width: 170px;
+    height: 145px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    align-items: center;
+    background-color: #db4444;
+    padding: 25px 56px
+}
+
+.categori__span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000
+}
+
+.categori__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff
+}
+
+@media only screen and (max-width: 568px) {
+    .categori__statr {
+        flex-direction: column;
+        text-align: center;
+        align-items: center
+    }
+
+    .categori__list {
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+.sonbox__container {
+    margin-top: 140px;
+    width: 1170px;
+    height: 500px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 56px 56px
+}
+
+.sonbox__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0f6;
+    padding-left: 35px
+}
+
+.sonbox__title {
+    padding: 32px 32px;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fafafa
+}
+
+.sonbox__art {
+    padding-left: 35px
+}
+
+.sonbox__link {
+    margin-top: 40px;
+    margin-left: 35px;
+    padding: 16px 45px;
+    width: 171px;
+    height: 56px;
+    color: #fafafa;
+    background-color: #0f6;
+    border-radius: 5px
+}
+
+@media only screen and (max-width: 568px) {
+    .sonbox__container {
+        flex-direction: column;
+        align-items: center;
+        height: 900px
+    }
+
+    .sonbox__statr {
+        text-align: center
+    }
+
+    .sonbox__link {
+        margin-left: 145px
+    }
+}
+
+.arrive__container {
+    margin-top: 140px
+}
+
+.arrive__statr {
+    display: flex;
+    margin-top: 60px;
+    gap: 30px
+}
+
+.arrive__item {
+    width: 570px;
+    height: 600px;
+    background: #000;
+    border-radius: 4px
+}
+
+.arrive__titles {
+    position: absolute;
+    margin: 450px 32px
+}
+
+.arrive__title {
+    padding-top: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000
+}
+
+.arrive__teks {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fafafa
+}
+
+.arrive__art {
+    position: absolute;
+    padding: 89px 29px
+}
+
+.arrive__text {
+    padding: 16px 0px 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fafafa
+}
+
+.arrive__link {
+    color: #fafafa
+}
+
+.arrive__itemon {
+    display: flex;
+    width: 570px;
+    height: 284px;
+    background: #0d0d0d;
+    border-radius: 4px
+}
+
+.arrive__titleon {
+    position: absolute;
+    padding: 132px 24px
+}
+
+.arrive__img2 {
+    margin: 28px 150px;
+    width: 482px;
+    height: 256px
+}
+
+.arrive__listin {
+    display: flex;
+    gap: 30px
+}
+
+.arrive__itemin {
+    margin-top: 30px;
+    padding: 31px 40px;
+    width: 270px;
+    height: 284px;
+    background: #000;
+    border-radius: 4px
+}
+
+.arrive__textin {
+    position: absolute;
+    padding: 125px 10px
+}
+
+.arrive__imgin {
+    position: absolute
+}
+
+.fast__list {
+    display: flex;
+    align-items: center;
+    gap: 88px;
+    margin: 140px 114px;
+    padding-top: 20px
+}
+
+.fast__img {
+    padding-left: 84px
+}
+
+.fast__title {
+    margin: 24px 0px 8px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000
+}
+
+.fast__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #000
+}
